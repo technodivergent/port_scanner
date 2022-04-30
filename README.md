@@ -14,9 +14,12 @@ positional arguments:
 
 optional arguments:
   -h, --help            show this help message and exit        
-  -s START, --start START
-                        Specify the start of the port range    
-  -e END, --end END     Specify the end of the port range      
+  
+  -s START, --start     START
+                        Specify the start of the port range 
+
+  -e END, --end END     Specify the end of the port range   
+
   -t THREADS, --threads THREADS
                         Specify the number of threads to spawn
 ```
