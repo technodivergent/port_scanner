@@ -53,7 +53,7 @@ def scanner() -> None:
 def valid_ip_addr(target: str) -> str:
     """ Validate target to scan is a valid private IP address """
     if not ipaddress.ip_address(target).is_private:
-        raise argparse.ArgumentTypeError("Target is limited to private IP address space (/24)")
+        raise argparse.ArgumentTypeError("Target is limited to private IP address space (RFC 1918)")
     return target
 
 def start_threads(num_threads:int ) -> None:
